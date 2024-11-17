@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "flowbite";
+
+/**************Dashboard Style*****************/
+/**************Dashboard Style*****************/
+
+body {
+  background-color: #2d2d2d;
+}

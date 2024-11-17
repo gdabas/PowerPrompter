@@ -1,0 +1,352 @@
+.nkBanner {
+  z-index: 1;
+  position: relative;
+}
+.logoWrapper {
+  font-size: 35px;
+  color: #000;
+  font-weight: 900;
+  background: linear-gradient(180deg, #ff7464 0%, #3e49f3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.logoLink {
+  text-decoration: none;
+}
+.mainHeader {
+  background-color: #fff;
+  z-index: 999;
+}
+.nkBanner[data-bg-image] {
+  background-size: cover;
+  background-position: center;
+}
+
+.nkBannerWrap {
+  z-index: 5;
+  padding: 60px 0px;
+  padding-top: 120px;
+  position: relative;
+}
+.loginBtn {
+  text-decoration: none;
+  color: #2d2d2d;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid #ff7464;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all 0.4s linear;
+}
+.loginBtn:hover {
+  background: linear-gradient(90deg, #ff7464 0%, #3e49f3 100%);
+  color: #fff;
+  transition: ease-in all 0.3s;
+}
+
+.nkTitle {
+  font-size: 3rem;
+  font-weight: 700;
+}
+@media (min-width: 1399px) {
+  .nkTitle {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .nkBannerWrap {
+    padding-top: 160px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nkBannerWrap {
+    padding-top: 140px;
+  }
+}
+
+.nk-banner-wrap-kids-course {
+  padding-top: 3.75rem;
+  padding-bottom: 0px !important;
+}
+
+.nk-banner-wrap-2 {
+  padding-bottom: 120px;
+}
+
+@media (max-width: 767.98px) {
+  .nk-banner-content p {
+    font-size: 16px !important;
+  }
+}
+
+.nk-banner-img-s1 .thumb {
+  position: absolute;
+}
+
+.nk-banner-img-s1 .thumb-1 {
+  left: -14.92%;
+  bottom: 0;
+  width: 34.0726%;
+}
+
+.nk-banner-img-s1 .thumb-2 {
+  right: -14.92%;
+  bottom: 7.5%;
+  width: 46.5726%;
+}
+
+.nk-banner-img-s3 {
+  right: 0;
+  top: 0px;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .nk-banner-img-s3 {
+    top: 30px;
+  }
+}
+
+.nkBannerLanding::before {
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../public/landing-bg.png");
+}
+
+.nkBannerLanding .nkMask.blur::after,
+.nkBannerLanding .nkMask.blur::before {
+  content: "";
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nkBannerLanding .nkMask.blur::after {
+  right: 0;
+  top: -280px;
+  width: 819px;
+  height: 100%;
+  background-size: contain;
+  background-image: url("../../public/d.png");
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.nkBannerLanding .nkMask.blur::before {
+  width: 100%;
+  left: 60px;
+  bottom: 0px;
+  height: 49.9375rem;
+  background-size: contain;
+  background-image: url("../../public/c.png");
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.nkBannerLanding .nkMask.shape::before,
+.nkBannerLanding .nkMask.shape::after {
+  content: "";
+  z-index: -1;
+  opacity: 0.6;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  mix-blend-mode: luminosity !important;
+}
+
+@media (min-width: 1400px) {
+  .nkBannerLanding .nkMask.shape::after {
+    right: -24%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .nkBannerLanding .nkMask.shape::after {
+    right: -20%;
+  }
+}
+.nkFrame {
+  position: relative;
+}
+.nkFrameChildren {
+  position: absolute;
+  transition: all 0.3s linear;
+}
+
+.nkBannerLanding .nkFrameBase {
+  z-index: 1;
+  width: 420px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .nkBannerLanding .nkFrameBase {
+    width: 480px;
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .nkBannerLanding .nkFrameBase {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.nkBannerLanding .nkFrameChildren {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .nkBannerLanding .nkFrameChildren {
+    bottom: 0;
+    z-index: -1;
+    display: block;
+  }
+}
+
+@media (min-width: 576px) {
+  .nkBannerLanding .nkFrameChildren img {
+    width: auto;
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nkBannerLanding .nkFrameChildren img {
+    height: 230px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nkBannerLanding .nkFrameChildren img {
+    height: 320px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nkBannerLanding .nkFrameChildren img {
+    height: 460px;
+  }
+  .nkBannerWrap {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 576px) {
+  .nkBannerLanding .nkFrameChildrenOne {
+    left: -20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nkBannerLanding .nkFrameChildrenOne {
+    left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .nkBannerLanding .nkFrameChildrenOne {
+    left: -150px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nkBannerLanding .nkFrameChildrenOne {
+    left: -230px;
+  }
+}
+
+@media (min-width: 576px) {
+  .nkBannerLanding .nkFrameChildrenTwo {
+    right: -20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nkBannerLanding .nkFrameChildrenTwo {
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .nkBannerLanding .nkFrameChildrenTwo {
+    right: -150px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nkBannerLanding .nkFrameChildrenTwo {
+    right: -230px;
+  }
+}
+
+.nkBannerLanding .nk-banner-wrap {
+  padding-top: 120px;
+}
+
+@media (min-width: 992px) {
+  .nkBannerLanding .nk-banner-wrap {
+    padding-top: 160px;
+  }
+}
+.rlsButtonGradient {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 15px 60px;
+  display: inline-block;
+  font-weight: 600;
+}
+.rlsButtonWhite {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 15px 60px;
+  display: inline-block;
+  background-color: #fff;
+  font-weight: 600;
+}
+.rlsButtonGradient::before,
+.rlsButtonGradient::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff7464 0%, #3e49f3 100%);
+  border-radius: 5px;
+  z-index: -1;
+  transition: all 0.4s linear;
+  border-radius: 40px;
+}
+.rlsButtonGradient:hover::before {
+  background: linear-gradient(180deg, #ff7464 0%, #3e49f3 100%);
+}
+.rlsButtonGropup {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}

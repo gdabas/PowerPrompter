@@ -1,0 +1,129 @@
+.sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  height: 100vh;
+  transition: width 0.3s;
+  position: relative;
+}
+.sidebar.collapsed {
+  width: 0px;
+  transition: width 0.3s;
+}
+.sidebar.collapsed nav,
+.sidebar.collapsed .sidebarHeader span {
+  display: none;
+}
+
+.sidebar nav {
+  padding: 0 25px;
+}
+.sidebar.collapsed .collapsMenuButton {
+  right: -40px;
+}
+.collapsMenuButton {
+  right: -20px;
+  background-color: #c7c7c7;
+  height: 35px;
+  width: 35px;
+  border-radius: 7px;
+  line-height: 20px;
+  text-align: center;
+  z-index: 99;
+  border: none;
+  color: #fff;
+}
+.sidebar nav li.active a {
+  color: #ff7464;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0px;
+  }
+  .sidebar.collapsed {
+    width: 250px;
+  }
+  .sidebar nav,
+  .sidebar .sidebarHeader span {
+    display: none;
+  }
+  .sidebar.collapsed nav,
+  .sidebar.collapsed .sidebarHeader span {
+    display: block;
+  }
+  .sidebar.collapsed .collapsMenuButton {
+    right: 0px;
+  }
+}
+
+.version {
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+  opacity: 0.5;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu > li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
+.menu > li a {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.menu > li {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  font-weight: 500;
+}
+.menu > li a svg {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  margin-right: 10px;
+}
+.menu > li svg {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.subMenu {
+  list-style-type: none;
+  padding: 10px 10px 10px 20px;
+  background-color: #e5e5e5;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.subMenu > li {
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.sidebarHeader {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 15px 15px;
+}
+
+.sidebarHeader span {
+  font-size: 30px;
+  font-weight: 900;
+  background: linear-gradient(180deg, #ff7464 0%, #3e49f3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

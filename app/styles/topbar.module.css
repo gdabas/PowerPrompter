@@ -1,0 +1,36 @@
+.dropdown {
+  background-color: #fff !important;
+  min-width: 250px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.logoutBtn {
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(250, 83, 83);
+  color: #fff;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.dropDownHeader h4 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.dropDownHeader {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.dropDownHeader span {
+  opacity: 0.7;
+}
+
+.dropdown a {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
